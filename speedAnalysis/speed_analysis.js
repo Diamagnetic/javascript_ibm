@@ -32,7 +32,8 @@ console.log(typedWords);
         wpm = Math.round((typedWords / timeElapsed) * 60);
     }
 
-    document.getElementById('output').innerHTML = '<h2>Typing Test Results:</h2>' +
+    document.getElementById('output').innerHTML = '<h2>Typing Test Results:</h2>' + 
+        '<p>Total Length: ' + userTypedText.length + '</p>' +
         '<p>Words Typed: ' + typedWords + '</p>' +
         '<p>Time Elapsed: ' + timeElapsed.toFixed(2) + ' seconds</p>' +
         '<p>Words Per Minute (WPM): ' + wpm + '</p>';
